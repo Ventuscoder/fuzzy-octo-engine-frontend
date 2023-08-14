@@ -1,0 +1,84 @@
+.grid {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin: 30px;
+  margin-top: 5px;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+}
+.item{
+  width: auto;
+}
+.main{
+  padding: 30px;
+  margin: 100px;
+}
+body{
+  background-repeat: no-repeat;
+  background: 
+    linear-gradient(
+      rgba(45, 74, 160, 0.45), 
+      rgba(45, 74, 160, 0.45)
+    ),
+    /* bottom, image */
+    url("https://c1.wallpaperflare.com/preview/542/354/434/flashcards-cards-paper.jpg");
+  background-size: cover;
+}
+h1{
+  width: 100%;
+  color: white !important;
+  width: 91%;
+  margin: 0 auto;
+  text-align: center;
+}
+.back{
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  transform: scale(0.8);  
+  box-shadow: 0 5px #5A5A5A;
+}
+
+.back span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.back span:after {
+  content: '\21B6';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -10px;
+  transition: 0.5s;
+}
+
+.back:hover span {
+  padding-left: 30px;
+}
+
+.back:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+.back:active{
+  box-shadow: 0 5px #000;
+  transform: translateY(2px);
+}
